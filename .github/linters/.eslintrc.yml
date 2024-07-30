@@ -1,0 +1,33 @@
+env:
+  commonjs: true
+  es6: true
+  jest: true
+  node: true
+
+ignorePatterns:
+  - "!.*"
+  - "**.test.ts"
+  - "**.spec.ts"
+  - "**/node_modules/.*"
+  - "**/dist/.*"
+  - "**/coverage/.*"
+  - "**/__test__/.*"
+
+parserOptions:
+  ecmaVersion: 2023
+  sourceType: module
+
+plugins:
+  - jest
+  - prettier
+
+extends:
+  - eslint:recommended
+  - plugin:github/recommended
+  - plugin:jest/recommended
+
+rules:
+  camelcase: "off"
+  prettier/prettier: "error"
+  import/no-commonjs: "off"
+
