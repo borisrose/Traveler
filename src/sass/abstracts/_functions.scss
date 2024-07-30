@@ -1,3 +1,0 @@
-@function calculate-opacity ($opacity:1, $percent: 50){
-    @return ($opacity * $percent) / 100
-}
